@@ -3,6 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
+  --page-padding: 10px;
   --primary-font-family: "IBM Plex Mono", Arial, sans-serif;
   --primary-font-size: 18px;
   --page-headers-font-size: 116px;
