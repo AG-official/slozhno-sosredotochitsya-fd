@@ -1,15 +1,21 @@
 /* Переменные для проекта */
 :root {
  /* Отступы  */
+  --page-spacing: var(--spacing-s);
+  --content-spacing: var(--spacing-l);
+  --section-spacing: var(--spacing-xl);
   --spacing-xs: 5px;
   --spacing-s: 10px;
   --spacing-m: 20px;
-  --spacing-l: 50px;
+  --spacing-l: 40px;
+  --spacing-xl: 50px;
+  --spacing-2xl: 60px;
+  --spacing-3xl: 80px;
 
 /* Шрифты */
   --primary-font-family: "IBM Plex Mono", Arial, sans-serif;
   --primary-font-size: 1.125rem;
-  --page-headers-font-size: 116px;
+  --page-headers-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --primary-line-height: 130%;
