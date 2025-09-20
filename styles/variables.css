@@ -28,7 +28,7 @@
 /* Цвета */
   --page-headers-color: rgba(219, 0, 255, 1);
   --shadow-color: rgba(255, 0, 112, 1);
-  --decoration-color: rgba(255, 0, 112);
+  --decoration-color: rgba(255, 0, 112, 1);
   --hover-outline-color: rgba(255, 0, 112, 0.4);
   --section-title-color: rgba(255, 0, 112, 1);
   --paragraph-title-color: rgba(0, 0, 40, 1);
