@@ -1,6 +1,6 @@
 /* Переменные для проекта */
 :root {
- /* Отступы  */
+/* Отступы  */
   --page-spacing: var(--spacing-s);
   --content-spacing: var(--spacing-l);
   --section-spacing: var(--spacing-xl);

@@ -20,10 +20,6 @@
   --paragraph-text-color: rgba(53, 52, 48, 1);
 }
 
-.decorative_element {
-    display: none;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
   --bg-cover-image: url(../images/cover-image-light.png);
@@ -38,7 +34,13 @@
   --paragraph-text-color: rgba(53, 52, 48, 1);
   }
 
-  .decorative_element {
+  .theme-light .decorative_element {
     display: none;
   }
 }
+
+.theme-light .decorative_element {
+  display: none;
+}
+
+
