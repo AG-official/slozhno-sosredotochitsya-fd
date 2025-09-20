@@ -1,9 +1,9 @@
 /* Основыне стили проекта. По умолчанию выбрана тёмная тема */
 
 .page {
-  background: var(--bg-cover-color, rgba(0, 0, 40, 1)) var(--bg-cover-image, url(../images/cover-image-dark.png)) fixed no-repeat center / cover;
   font-family: var(--primary-font-family, "IBM Plex Mono", sans-serif);
   font-size: var(--primary-font-size, 1.125rem);
+  background: var(--bg-cover-color, rgba(0, 0, 40, 1)) var(--bg-cover-image, url(../images/cover-image-dark.png)) fixed no-repeat center / cover;
 }
 
 .header {
@@ -11,9 +11,9 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   place-items: center start;
+  padding: var(--page-spacing, 10px);
   min-block-size: 668px;
   block-size: 100vh;
-  padding: var(--page-spacing, 10px);
 }
 
 .header__title {
@@ -21,6 +21,7 @@
   font-weight: var(--font-weight-bold, 700);
   font-size: var(--page-headers-font-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   line-height: var(--page-headers-line-height, 130%);
+  text-transform: lowercase;
   text-shadow: 4px 4px 0 var(--shadow-color, rgba(255, 0, 112, 1));
 }
 
@@ -35,23 +36,23 @@
 }
 
 .header__theme-menu-item {
+  border: none;
   inline-size: 70px;
   block-size: 26px;
-  border: none;
 }
 
 .header__theme-menu-button {
   display: grid;
   align-items: start;
-  inline-size: 100%;
-  block-size: 100%;
   border: none;
+  color: var(--decoration-color, rgba(255, 0, 112, 1));
   font-size: var(--primary-font-size, 1.125rem);
   line-height: var(--primary-line-height, 130%);
   text-transform: lowercase;
   background-color: transparent;
-  color: var(--decoration-color, rgba(255, 0, 112, 1));
   cursor: pointer;
+  inline-size: 100%;
+  block-size: 100%;
   appearance: none;
 }
 
@@ -61,19 +62,19 @@
 }
 
 .header__theme-menu-button:focus {
-  appearance: none;
   outline: none;
+  appearance: none;
 }
 
 .header__theme-menu-button:focus-visible {
-  appearance: none;
   border-bottom: 1px var(--decoration-color, rgba(255, 0, 112, 1)) solid;
+  appearance: none;
 }
 
 .header__theme-menu-button_active {
   outline: 1px var(--decoration-color, rgba(255, 0, 112, 1)) solid;
-  appearance: none;
   pointer-events: none;
+  appearance: none;
 }
 
 .decorated-zone::before,
@@ -132,23 +133,23 @@
 
 .paragraph__title {
   color: var(--paragraph-title-color, rgba(0, 0, 40, 1));
-  background-color: var(--paragraph-title-bg-color, rgba(255, 0, 112, 1));
-  font-size: var(--primary-font-size, 1.125rem);
   font-weight: var(--font-weight-bold, 700);
+  font-size: var(--primary-font-size, 1.125rem);
   line-height: var(--primary-line-height, 130%);
+  background-color: var(--paragraph-title-bg-color, rgba(255, 0, 112, 1));
 }
 
 .paragraph__subtitle {
   color: var(--paragraph-title-color, rgba(0, 0, 40, 1));
-  background-color: var(--paragraph-title-bg-color, rgba(255, 0, 112, 1));
-  font-size: var(--primary-font-size, 1.125rem);
   font-weight: var(--font-weight-regular, 400);
+  font-size: var(--primary-font-size, 1.125rem);
   line-height: var(--primary-line-height, 130%);
+  background-color: var(--paragraph-title-bg-color, rgba(255, 0, 112, 1));
 }
 
 .paragraph__link {
-  text-shadow: 2px 2px 0 var(--shadow-color, rgba(255, 0, 112, 1));
   text-decoration: none;
+  text-shadow: 2px 2px 0 var(--shadow-color, rgba(255, 0, 112, 1));
 }
 
 .paragraph__link:hover {
@@ -176,7 +177,7 @@
 }
 
 .content__section:has(img) {
-  gap: var(--spacing-m, 10px);
+  gap: var(--spacing-s, 10px);
 }
 
 .content__section-title {
@@ -206,19 +207,19 @@
 }
 
 .gallery__img {
-  inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .footer {
   position: relative;
   display: grid;
-  min-block-size: 668px;
-  block-size: 100vh;
   place-items: center;
   padding: var(--page-spacing, 10px);
+  min-block-size: 668px;
+  block-size: 100vh;
 }
 
 .footer__title {
@@ -226,6 +227,7 @@
   font-weight: var(--font-weight-bold, 700);
   font-size: var(--page-headers-font-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   line-height: var(--page-headers-line-height, 130%);
+  text-transform: lowercase;
   text-shadow: 2px 2px 0 var(--shadow-color, rgba(255, 0, 112, 1));
 }
 
@@ -236,8 +238,8 @@
   }
 
   .paragraph__wrapper {
-    width: calc((100% - var(--page-spacing, 10px)) / 2);
     justify-self: end;
+    width: calc((100% - var(--page-spacing, 10px)) / 2);
   }
 
   .content__section-title {
@@ -245,7 +247,7 @@
   }
 
   .content__section:nth-child(odd):not(:has(.gallery)) {
-    grid-template-columns: min-content 1fr; /*поиграть с minmax*/
+    grid-template-columns: min-content 1fr;
   }
 
   .content__section:has(img) {
@@ -258,7 +260,7 @@
     grid-auto-flow: dense;
     gap: var(--spacing-m, 20px);
   }
-  
+
   .gallery img:nth-child(1) {
     grid-column: 1/3;
   }

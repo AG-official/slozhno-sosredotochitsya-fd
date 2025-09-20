@@ -1,11 +1,11 @@
 /* Светлая тема */
 
 :root.theme-light {
-/* Изображения */
+  /* Изображения */
   --bg-cover-image: url(../images/cover-image-light.png);
   --bg-cover-color: rgba(53, 52, 48, 1);
 
-/* Цвета */
+  /* Цвета */
   --page-headers-color: rgba(255, 194, 230, 1);
   --shadow-color: rgba(255, 141, 203, 1);
   --decoration-color: rgba(53, 52, 48, 1);
@@ -22,16 +22,16 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-  --bg-cover-image: url(../images/cover-image-light.png);
-  --bg-cover-color: rgba(53, 52, 48, 1);
-  --page-headers-color: rgba(255, 194, 230, 1);
-  --shadow-color: rgba(255, 141, 203, 1);
-  --decoration-color: rgba(53, 52, 48, 1);
-  --hover-outline-color: rgba(50, 49, 45, 0.4);
-  --section-title-color: rgba(53, 52, 48, 1);
-  --paragraph-title-color: rgba(53, 52, 48, 1);
-  --paragraph-title-bg-color: rgba(255, 141, 203, 1);
-  --paragraph-text-color: rgba(53, 52, 48, 1);
+    --bg-cover-image: url(../images/cover-image-light.png);
+    --bg-cover-color: rgba(53, 52, 48, 1);
+    --page-headers-color: rgba(255, 194, 230, 1);
+    --shadow-color: rgba(255, 141, 203, 1);
+    --decoration-color: rgba(53, 52, 48, 1);
+    --hover-outline-color: rgba(50, 49, 45, 0.4);
+    --section-title-color: rgba(53, 52, 48, 1);
+    --paragraph-title-color: rgba(53, 52, 48, 1);
+    --paragraph-title-bg-color: rgba(255, 141, 203, 1);
+    --paragraph-text-color: rgba(53, 52, 48, 1);
   }
 
   .decorative_element {
